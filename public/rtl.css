@@ -224,3 +224,6 @@ html[lang="ar"] body *{letter-spacing:0!important}
 /* Video gallery: arrows and progress follow the reading direction. */
 html[dir="rtl"] .reels-arrow svg{transform:scaleX(-1)}
 html[dir="rtl"] [data-reels-progress]{transform-origin:right center}
+
+/* Footer links keep their real spelling (e.g. "IPS e.max", "X-ray"). */
+.footer .btn.btn-link{text-transform:none}

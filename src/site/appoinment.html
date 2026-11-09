@@ -1205,14 +1205,14 @@
             var message = document.getElementById('message').value.trim();
 
             if (!name || !email || !subject || !message) {
-                alert('Please fill in all required fields.');
+                alert(window.__SITE_LANG__ === 'ar' ? 'يرجى تعبئة جميع الحقول المطلوبة.' : 'Please fill in all required fields.');
                 return;
             }
 
             // Fill preview
             document.getElementById('previewName').textContent = name;
             document.getElementById('previewEmail').textContent = email;
-            document.getElementById('previewPhone').textContent = phone || 'Not provided';
+            document.getElementById('previewPhone').textContent = phone || (window.__SITE_LANG__ === 'ar' ? 'غير مذكور' : 'Not provided');
             document.getElementById('previewSubject').textContent = subject;
             document.getElementById('previewMessage').textContent = message;
 
