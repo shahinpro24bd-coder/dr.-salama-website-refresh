@@ -210,7 +210,7 @@ html[dir="rtl"] .appt-chamber-item{border-left:0;padding-left:0;border-right:2px
 html[dir="rtl"] .video-L16 p{border-left:0;border-right:3px solid #BF9456}
 
 /* Section titles are centred under their small label in both languages. */
-.education-heading .mb-3{text-align:center}
+.education-heading .mb-3{text-align:center;margin-left:auto!important;margin-right:auto!important}
 
 /* Forward arrows point the way Arabic reads. */
 html[dir="rtl"] .fa-arrow-right:not(.treatments-premium-section .ser16 i){display:inline-block;transform:scaleX(-1)}
