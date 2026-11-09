@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Vercel builds use Nitro's Vercel server preset; other builds retain the platform default, because public HTML requires request-time language rendering.
+- Language-switch and internal navigation URLs carry an explicit language; cookie-selected responses are private to prevent cross-language CDN/browser cache reuse.
+- Site languages are defined once in `SITE_LANGS`/`DEFAULT_LANG` (src/lib/site-content/server.ts); RTL languages render with `dir="rtl"` server-side, so page HTML keeps a single shared structure.
+- Page copy lives as keyed text in `src/site/*.html` plus `fallback.generated.json`; inline page scripts must branch on `window.__SITE_LANG__` using the same language codes.
