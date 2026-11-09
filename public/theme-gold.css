@@ -391,7 +391,9 @@ html[lang="ar"] body *:not(i):not([class*="bi-"]):not([class*="fa-"]):not(.fa):n
   font-style: normal !important;
 }
 html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3,
-html[lang="ar"] h1 *, html[lang="ar"] h2 *, html[lang="ar"] h3 *,
+html[lang="ar"] h1 *:not(i):not([class*="fa-"]):not([class*="bi-"]),
+html[lang="ar"] h2 *:not(i):not([class*="fa-"]):not([class*="bi-"]),
+html[lang="ar"] h3 *:not(i):not([class*="fa-"]):not([class*="bi-"]),
 html[lang="ar"] [class*="font-dancing"], html[lang="ar"] [class*="playfair"] {
   font-family: "Amiri", "Tajawal", serif !important;
   font-weight: 700 !important;
