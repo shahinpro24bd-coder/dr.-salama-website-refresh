@@ -203,7 +203,6 @@ html[dir="rtl"] body .cred-custom-card:hover{transform:translateY(-7px) translat
 html[dir="rtl"] body .membership-card::before{right:auto;left:.7rem}
 html[dir="rtl"] body .chamber-card{border-left:0!important;border-right:4px solid var(--pg)!important}
 html[dir="rtl"] body .treatments-premium-section .ser-num{border-left:1px solid var(--treatment-border);border-right:2px solid var(--pg)}
-html[dir="rtl"] body .home-about-premium .about-contact-card{left:auto;right:-22px;border-left:0;border-right:4px solid var(--pg)}
 html[dir="rtl"] body.about-editorial .about-story .col-lg-6:last-child > p.text-primary{padding:0 1.25rem 1.15rem 0;border-left:0;border-right:2px solid var(--about-gold)}
 html[dir="rtl"] .appt-tile{border-left:0;border-right:4px solid var(--bs-primary);border-radius:1rem 0 0 1rem}
 html[dir="rtl"] .appt-chamber-item{border-left:0;padding-left:0;border-right:2px solid rgba(191,148,86,.5);padding-right:1.1rem}
@@ -221,3 +220,7 @@ html[dir="rtl"] input[type="tel"]{direction:ltr;text-align:right}
 
 /* Arabic text never needs the Latin letter-spacing used for small caps labels. */
 html[lang="ar"] body *{letter-spacing:0!important}
+
+/* Video gallery: arrows and progress follow the reading direction. */
+html[dir="rtl"] .reels-arrow svg{transform:scaleX(-1)}
+html[dir="rtl"] [data-reels-progress]{transform-origin:right center}
