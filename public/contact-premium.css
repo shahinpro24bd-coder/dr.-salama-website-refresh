@@ -71,3 +71,4 @@ body.contact-editorial .appo2{animation:contactEditorialReveal .7s ease both}
   body.contact-editorial .appo2{animation:none}
   body.contact-editorial .appo8,body.contact-editorial .appo10{transition:none}
 }
+html[lang="ar"] body.contact-editorial .appo5::before{content:"استشارة خاصة";letter-spacing:0}
