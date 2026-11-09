@@ -1323,42 +1323,42 @@
             
             // Validate required fields
             if (!name) {
-                showNotification(window.__SITE_LANG__ === 'ru' ? 'Пожалуйста, укажите ваше ФИО' : 'Please enter your full name', 'error');
+                showNotification(window.__SITE_LANG__ === 'ar' ? 'يرجى كتابة الاسم الكامل' : 'Please enter your full name', 'error');
                 document.getElementById('appo14').focus();
                 return;
             }
             
             if (!phone) {
-                showNotification(window.__SITE_LANG__ === 'ru' ? 'Пожалуйста, укажите ваш номер телефона' : 'Please enter your phone number', 'error');
+                showNotification(window.__SITE_LANG__ === 'ar' ? 'يرجى كتابة رقم الهاتف' : 'Please enter your phone number', 'error');
                 document.getElementById('appo15').focus();
                 return;
             }
             
             // Format the message
-            const russian = window.__SITE_LANG__ === 'ru';
-            let formattedMessage = russian ? "Заявка на приём:\n" : "Appointment Request:\n";
-            formattedMessage += `${russian ? 'ФИО' : 'Full Name'}: ${name}\n`;
-            formattedMessage += `${russian ? 'Телефон' : 'Phone'}: ${phone}\n`;
+            const arabic = window.__SITE_LANG__ === 'ar';
+            let formattedMessage = arabic ? "طلب حجز موعد:\n" : "Appointment Request:\n";
+            formattedMessage += `${arabic ? 'الاسم الكامل' : 'Full Name'}: ${name}\n`;
+            formattedMessage += `${arabic ? 'الهاتف' : 'Phone'}: ${phone}\n`;
             
             if (date) {
-                formattedMessage += `${russian ? 'Дата' : 'Date'}: ${formatDate(date)}\n`;
+                formattedMessage += `${arabic ? 'التاريخ' : 'Date'}: ${formatDate(date)}\n`;
             }
             
             if (message) {
-                formattedMessage += `${russian ? 'Сообщение' : 'Message'}: ${message}`;
+                formattedMessage += `${arabic ? 'الرسالة' : 'Message'}: ${message}`;
             }
             
             // Encode the message
             const encodedMessage = encodeURIComponent(formattedMessage);
             
             // WhatsApp phone number (without + and 0)
-            const phoneNumber = "972532815272";
+            const phoneNumber = "9647744444992";
             
             // Create WhatsApp URL
             const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
             
             // Show success notification
-            showNotification(russian ? 'Перенаправляем вас в WhatsApp...' : 'Redirecting you to WhatsApp...', 'success');
+            showNotification(arabic ? 'جارٍ تحويلك إلى واتساب...' : 'Redirecting you to WhatsApp...', 'success');
             
             // Open WhatsApp in a new tab after a short delay
             setTimeout(() => {
@@ -1369,7 +1369,7 @@
         function formatDate(dateString) {
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
             const date = new Date(dateString);
-            return date.toLocaleDateString(window.__SITE_LANG__ === 'ru' ? 'ru-RU' : 'en-GB', options);
+            return date.toLocaleDateString(window.__SITE_LANG__ === 'ar' ? 'ar-IQ' : 'en-GB', options);
         }
 
         // Add enter key support for form submission

@@ -1017,7 +1017,7 @@
                 if (openCard !== card) {
                     openCard.classList.remove('expanded');
                     openCard.querySelector('.ser14').style.maxHeight = '0';
-                    openCard.querySelector('.ser17').textContent = window.__SITE_LANG__ === 'ru' ? 'Читать далее' : 'Read More';
+                    openCard.querySelector('.ser17').textContent = window.__SITE_LANG__ === 'ar' ? 'اقرأ المزيد' : 'Read More';
                 }
             }
 
@@ -1025,11 +1025,11 @@
             if (card.classList.contains('expanded')) {
                 card.classList.remove('expanded');
                 details.style.maxHeight = '0';
-                btnText.textContent = window.__SITE_LANG__ === 'ru' ? 'Читать далее' : 'Read More';
+                btnText.textContent = window.__SITE_LANG__ === 'ar' ? 'اقرأ المزيد' : 'Read More';
             } else {
                 card.classList.add('expanded');
                 details.style.maxHeight = details.scrollHeight + 'px';
-                btnText.textContent = window.__SITE_LANG__ === 'ru' ? 'Свернуть' : 'Show Less';
+                btnText.textContent = window.__SITE_LANG__ === 'ar' ? 'عرض أقل' : 'Show Less';
             }
         } 
 </script>
