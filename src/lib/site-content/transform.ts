@@ -182,13 +182,24 @@ export function collectSiteContent(html: string): SiteContent {
  * the database, each piece is tagged with its key so the language switcher and
  * the editor can find it, and images get lazy loading.
  */
+/**
+ * Phone numbers and @handles are left-to-right runs; inside right-to-left text
+ * the browser would reorder their space-separated groups ("4992 444 0774").
+ * Wrapping them in Unicode LRI…PDI keeps them reading in their real order.
+ */
+const LTR_RUN_RE = /\u2066?(@[A-Za-z0-9._]+|\+?\d[\d ]{6,}\d)\u2069?/g;
+export function isolateLtrRuns(text: string): string {
+  return text.replace(LTR_RUN_RE, "\u2066$1\u2069");
+}
+
 export function renderPage(html: string, options: RenderOptions): string {
-  const { texts, images, editMode = false, lang = "en", bodyScripts = "" } = options;
+  const { texts, images, editMode = false, lang = "ar", bodyScripts = "" } = options;
   const doc = parse(html) as unknown as AnyNode;
+  const rtl = lang === "ar";
   for (const child of doc.childNodes || []) {
     if (child.tagName === "html") {
       setAttr(child, "lang", lang);
-      setAttr(child, "dir", lang === "ar" ? "rtl" : "ltr");
+      setAttr(child, "dir", rtl ? "rtl" : "ltr");
     }
   }
 
@@ -211,7 +222,7 @@ export function renderPage(html: string, options: RenderOptions): string {
       const leading = raw.match(/^\s*/)![0];
       const trailing = raw.match(/\s*$/)![0];
       const { key, value } = resolveText(raw);
-      node.value = leading + value + trailing;
+      node.value = leading + (rtl && !editMode ? isolateLtrRuns(value) : value) + trailing;
       const list = keysByParent.get(parent) || [];
       list.push(key);
       keysByParent.set(parent, list);

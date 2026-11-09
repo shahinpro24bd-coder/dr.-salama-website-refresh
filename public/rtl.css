@@ -1,0 +1,260 @@
+/* Right-to-left (Arabic) layer: mirrors the LTR Bootstrap utilities and the
+   few direction-specific details of the theme, without changing the design. */
+html[dir="rtl"] .me-0{margin-right:0!important;margin-left:0!important}
+html[dir="rtl"] .ms-0{margin-left:0!important;margin-right:0!important}
+html[dir="rtl"] .pe-0{padding-right:0!important;padding-left:0!important}
+html[dir="rtl"] .ps-0{padding-left:0!important;padding-right:0!important}
+html[dir="rtl"] .me-1{margin-right:0!important;margin-left:.25rem!important}
+html[dir="rtl"] .ms-1{margin-left:0!important;margin-right:.25rem!important}
+html[dir="rtl"] .pe-1{padding-right:0!important;padding-left:.25rem!important}
+html[dir="rtl"] .ps-1{padding-left:0!important;padding-right:.25rem!important}
+html[dir="rtl"] .me-2{margin-right:0!important;margin-left:.5rem!important}
+html[dir="rtl"] .ms-2{margin-left:0!important;margin-right:.5rem!important}
+html[dir="rtl"] .pe-2{padding-right:0!important;padding-left:.5rem!important}
+html[dir="rtl"] .ps-2{padding-left:0!important;padding-right:.5rem!important}
+html[dir="rtl"] .me-3{margin-right:0!important;margin-left:1rem!important}
+html[dir="rtl"] .ms-3{margin-left:0!important;margin-right:1rem!important}
+html[dir="rtl"] .pe-3{padding-right:0!important;padding-left:1rem!important}
+html[dir="rtl"] .ps-3{padding-left:0!important;padding-right:1rem!important}
+html[dir="rtl"] .me-4{margin-right:0!important;margin-left:1.5rem!important}
+html[dir="rtl"] .ms-4{margin-left:0!important;margin-right:1.5rem!important}
+html[dir="rtl"] .pe-4{padding-right:0!important;padding-left:1.5rem!important}
+html[dir="rtl"] .ps-4{padding-left:0!important;padding-right:1.5rem!important}
+html[dir="rtl"] .me-5{margin-right:0!important;margin-left:3rem!important}
+html[dir="rtl"] .ms-5{margin-left:0!important;margin-right:3rem!important}
+html[dir="rtl"] .pe-5{padding-right:0!important;padding-left:3rem!important}
+html[dir="rtl"] .ps-5{padding-left:0!important;padding-right:3rem!important}
+html[dir="rtl"] .me-auto{margin-right:0!important;margin-left:auto!important}
+html[dir="rtl"] .ms-auto{margin-left:0!important;margin-right:auto!important}
+html[dir="rtl"] .text-start{text-align:right!important}
+html[dir="rtl"] .float-start{float:right!important}
+html[dir="rtl"] .text-end{text-align:left!important}
+html[dir="rtl"] .float-end{float:left!important}
+@media (min-width:576px){
+html[dir="rtl"] .me-sm-0{margin-right:0!important;margin-left:0!important}
+html[dir="rtl"] .ms-sm-0{margin-left:0!important;margin-right:0!important}
+html[dir="rtl"] .pe-sm-0{padding-right:0!important;padding-left:0!important}
+html[dir="rtl"] .ps-sm-0{padding-left:0!important;padding-right:0!important}
+html[dir="rtl"] .me-sm-1{margin-right:0!important;margin-left:.25rem!important}
+html[dir="rtl"] .ms-sm-1{margin-left:0!important;margin-right:.25rem!important}
+html[dir="rtl"] .pe-sm-1{padding-right:0!important;padding-left:.25rem!important}
+html[dir="rtl"] .ps-sm-1{padding-left:0!important;padding-right:.25rem!important}
+html[dir="rtl"] .me-sm-2{margin-right:0!important;margin-left:.5rem!important}
+html[dir="rtl"] .ms-sm-2{margin-left:0!important;margin-right:.5rem!important}
+html[dir="rtl"] .pe-sm-2{padding-right:0!important;padding-left:.5rem!important}
+html[dir="rtl"] .ps-sm-2{padding-left:0!important;padding-right:.5rem!important}
+html[dir="rtl"] .me-sm-3{margin-right:0!important;margin-left:1rem!important}
+html[dir="rtl"] .ms-sm-3{margin-left:0!important;margin-right:1rem!important}
+html[dir="rtl"] .pe-sm-3{padding-right:0!important;padding-left:1rem!important}
+html[dir="rtl"] .ps-sm-3{padding-left:0!important;padding-right:1rem!important}
+html[dir="rtl"] .me-sm-4{margin-right:0!important;margin-left:1.5rem!important}
+html[dir="rtl"] .ms-sm-4{margin-left:0!important;margin-right:1.5rem!important}
+html[dir="rtl"] .pe-sm-4{padding-right:0!important;padding-left:1.5rem!important}
+html[dir="rtl"] .ps-sm-4{padding-left:0!important;padding-right:1.5rem!important}
+html[dir="rtl"] .me-sm-5{margin-right:0!important;margin-left:3rem!important}
+html[dir="rtl"] .ms-sm-5{margin-left:0!important;margin-right:3rem!important}
+html[dir="rtl"] .pe-sm-5{padding-right:0!important;padding-left:3rem!important}
+html[dir="rtl"] .ps-sm-5{padding-left:0!important;padding-right:3rem!important}
+html[dir="rtl"] .me-sm-auto{margin-right:0!important;margin-left:auto!important}
+html[dir="rtl"] .ms-sm-auto{margin-left:0!important;margin-right:auto!important}
+html[dir="rtl"] .text-sm-start{text-align:right!important}
+html[dir="rtl"] .float-sm-start{float:right!important}
+html[dir="rtl"] .text-sm-end{text-align:left!important}
+html[dir="rtl"] .float-sm-end{float:left!important}
+}
+@media (min-width:768px){
+html[dir="rtl"] .me-md-0{margin-right:0!important;margin-left:0!important}
+html[dir="rtl"] .ms-md-0{margin-left:0!important;margin-right:0!important}
+html[dir="rtl"] .pe-md-0{padding-right:0!important;padding-left:0!important}
+html[dir="rtl"] .ps-md-0{padding-left:0!important;padding-right:0!important}
+html[dir="rtl"] .me-md-1{margin-right:0!important;margin-left:.25rem!important}
+html[dir="rtl"] .ms-md-1{margin-left:0!important;margin-right:.25rem!important}
+html[dir="rtl"] .pe-md-1{padding-right:0!important;padding-left:.25rem!important}
+html[dir="rtl"] .ps-md-1{padding-left:0!important;padding-right:.25rem!important}
+html[dir="rtl"] .me-md-2{margin-right:0!important;margin-left:.5rem!important}
+html[dir="rtl"] .ms-md-2{margin-left:0!important;margin-right:.5rem!important}
+html[dir="rtl"] .pe-md-2{padding-right:0!important;padding-left:.5rem!important}
+html[dir="rtl"] .ps-md-2{padding-left:0!important;padding-right:.5rem!important}
+html[dir="rtl"] .me-md-3{margin-right:0!important;margin-left:1rem!important}
+html[dir="rtl"] .ms-md-3{margin-left:0!important;margin-right:1rem!important}
+html[dir="rtl"] .pe-md-3{padding-right:0!important;padding-left:1rem!important}
+html[dir="rtl"] .ps-md-3{padding-left:0!important;padding-right:1rem!important}
+html[dir="rtl"] .me-md-4{margin-right:0!important;margin-left:1.5rem!important}
+html[dir="rtl"] .ms-md-4{margin-left:0!important;margin-right:1.5rem!important}
+html[dir="rtl"] .pe-md-4{padding-right:0!important;padding-left:1.5rem!important}
+html[dir="rtl"] .ps-md-4{padding-left:0!important;padding-right:1.5rem!important}
+html[dir="rtl"] .me-md-5{margin-right:0!important;margin-left:3rem!important}
+html[dir="rtl"] .ms-md-5{margin-left:0!important;margin-right:3rem!important}
+html[dir="rtl"] .pe-md-5{padding-right:0!important;padding-left:3rem!important}
+html[dir="rtl"] .ps-md-5{padding-left:0!important;padding-right:3rem!important}
+html[dir="rtl"] .me-md-auto{margin-right:0!important;margin-left:auto!important}
+html[dir="rtl"] .ms-md-auto{margin-left:0!important;margin-right:auto!important}
+html[dir="rtl"] .text-md-start{text-align:right!important}
+html[dir="rtl"] .float-md-start{float:right!important}
+html[dir="rtl"] .text-md-end{text-align:left!important}
+html[dir="rtl"] .float-md-end{float:left!important}
+}
+@media (min-width:992px){
+html[dir="rtl"] .me-lg-0{margin-right:0!important;margin-left:0!important}
+html[dir="rtl"] .ms-lg-0{margin-left:0!important;margin-right:0!important}
+html[dir="rtl"] .pe-lg-0{padding-right:0!important;padding-left:0!important}
+html[dir="rtl"] .ps-lg-0{padding-left:0!important;padding-right:0!important}
+html[dir="rtl"] .me-lg-1{margin-right:0!important;margin-left:.25rem!important}
+html[dir="rtl"] .ms-lg-1{margin-left:0!important;margin-right:.25rem!important}
+html[dir="rtl"] .pe-lg-1{padding-right:0!important;padding-left:.25rem!important}
+html[dir="rtl"] .ps-lg-1{padding-left:0!important;padding-right:.25rem!important}
+html[dir="rtl"] .me-lg-2{margin-right:0!important;margin-left:.5rem!important}
+html[dir="rtl"] .ms-lg-2{margin-left:0!important;margin-right:.5rem!important}
+html[dir="rtl"] .pe-lg-2{padding-right:0!important;padding-left:.5rem!important}
+html[dir="rtl"] .ps-lg-2{padding-left:0!important;padding-right:.5rem!important}
+html[dir="rtl"] .me-lg-3{margin-right:0!important;margin-left:1rem!important}
+html[dir="rtl"] .ms-lg-3{margin-left:0!important;margin-right:1rem!important}
+html[dir="rtl"] .pe-lg-3{padding-right:0!important;padding-left:1rem!important}
+html[dir="rtl"] .ps-lg-3{padding-left:0!important;padding-right:1rem!important}
+html[dir="rtl"] .me-lg-4{margin-right:0!important;margin-left:1.5rem!important}
+html[dir="rtl"] .ms-lg-4{margin-left:0!important;margin-right:1.5rem!important}
+html[dir="rtl"] .pe-lg-4{padding-right:0!important;padding-left:1.5rem!important}
+html[dir="rtl"] .ps-lg-4{padding-left:0!important;padding-right:1.5rem!important}
+html[dir="rtl"] .me-lg-5{margin-right:0!important;margin-left:3rem!important}
+html[dir="rtl"] .ms-lg-5{margin-left:0!important;margin-right:3rem!important}
+html[dir="rtl"] .pe-lg-5{padding-right:0!important;padding-left:3rem!important}
+html[dir="rtl"] .ps-lg-5{padding-left:0!important;padding-right:3rem!important}
+html[dir="rtl"] .me-lg-auto{margin-right:0!important;margin-left:auto!important}
+html[dir="rtl"] .ms-lg-auto{margin-left:0!important;margin-right:auto!important}
+html[dir="rtl"] .text-lg-start{text-align:right!important}
+html[dir="rtl"] .float-lg-start{float:right!important}
+html[dir="rtl"] .text-lg-end{text-align:left!important}
+html[dir="rtl"] .float-lg-end{float:left!important}
+}
+@media (min-width:1200px){
+html[dir="rtl"] .me-xl-0{margin-right:0!important;margin-left:0!important}
+html[dir="rtl"] .ms-xl-0{margin-left:0!important;margin-right:0!important}
+html[dir="rtl"] .pe-xl-0{padding-right:0!important;padding-left:0!important}
+html[dir="rtl"] .ps-xl-0{padding-left:0!important;padding-right:0!important}
+html[dir="rtl"] .me-xl-1{margin-right:0!important;margin-left:.25rem!important}
+html[dir="rtl"] .ms-xl-1{margin-left:0!important;margin-right:.25rem!important}
+html[dir="rtl"] .pe-xl-1{padding-right:0!important;padding-left:.25rem!important}
+html[dir="rtl"] .ps-xl-1{padding-left:0!important;padding-right:.25rem!important}
+html[dir="rtl"] .me-xl-2{margin-right:0!important;margin-left:.5rem!important}
+html[dir="rtl"] .ms-xl-2{margin-left:0!important;margin-right:.5rem!important}
+html[dir="rtl"] .pe-xl-2{padding-right:0!important;padding-left:.5rem!important}
+html[dir="rtl"] .ps-xl-2{padding-left:0!important;padding-right:.5rem!important}
+html[dir="rtl"] .me-xl-3{margin-right:0!important;margin-left:1rem!important}
+html[dir="rtl"] .ms-xl-3{margin-left:0!important;margin-right:1rem!important}
+html[dir="rtl"] .pe-xl-3{padding-right:0!important;padding-left:1rem!important}
+html[dir="rtl"] .ps-xl-3{padding-left:0!important;padding-right:1rem!important}
+html[dir="rtl"] .me-xl-4{margin-right:0!important;margin-left:1.5rem!important}
+html[dir="rtl"] .ms-xl-4{margin-left:0!important;margin-right:1.5rem!important}
+html[dir="rtl"] .pe-xl-4{padding-right:0!important;padding-left:1.5rem!important}
+html[dir="rtl"] .ps-xl-4{padding-left:0!important;padding-right:1.5rem!important}
+html[dir="rtl"] .me-xl-5{margin-right:0!important;margin-left:3rem!important}
+html[dir="rtl"] .ms-xl-5{margin-left:0!important;margin-right:3rem!important}
+html[dir="rtl"] .pe-xl-5{padding-right:0!important;padding-left:3rem!important}
+html[dir="rtl"] .ps-xl-5{padding-left:0!important;padding-right:3rem!important}
+html[dir="rtl"] .me-xl-auto{margin-right:0!important;margin-left:auto!important}
+html[dir="rtl"] .ms-xl-auto{margin-left:0!important;margin-right:auto!important}
+html[dir="rtl"] .text-xl-start{text-align:right!important}
+html[dir="rtl"] .float-xl-start{float:right!important}
+html[dir="rtl"] .text-xl-end{text-align:left!important}
+html[dir="rtl"] .float-xl-end{float:left!important}
+}
+@media (min-width:1400px){
+html[dir="rtl"] .me-xxl-0{margin-right:0!important;margin-left:0!important}
+html[dir="rtl"] .ms-xxl-0{margin-left:0!important;margin-right:0!important}
+html[dir="rtl"] .pe-xxl-0{padding-right:0!important;padding-left:0!important}
+html[dir="rtl"] .ps-xxl-0{padding-left:0!important;padding-right:0!important}
+html[dir="rtl"] .me-xxl-1{margin-right:0!important;margin-left:.25rem!important}
+html[dir="rtl"] .ms-xxl-1{margin-left:0!important;margin-right:.25rem!important}
+html[dir="rtl"] .pe-xxl-1{padding-right:0!important;padding-left:.25rem!important}
+html[dir="rtl"] .ps-xxl-1{padding-left:0!important;padding-right:.25rem!important}
+html[dir="rtl"] .me-xxl-2{margin-right:0!important;margin-left:.5rem!important}
+html[dir="rtl"] .ms-xxl-2{margin-left:0!important;margin-right:.5rem!important}
+html[dir="rtl"] .pe-xxl-2{padding-right:0!important;padding-left:.5rem!important}
+html[dir="rtl"] .ps-xxl-2{padding-left:0!important;padding-right:.5rem!important}
+html[dir="rtl"] .me-xxl-3{margin-right:0!important;margin-left:1rem!important}
+html[dir="rtl"] .ms-xxl-3{margin-left:0!important;margin-right:1rem!important}
+html[dir="rtl"] .pe-xxl-3{padding-right:0!important;padding-left:1rem!important}
+html[dir="rtl"] .ps-xxl-3{padding-left:0!important;padding-right:1rem!important}
+html[dir="rtl"] .me-xxl-4{margin-right:0!important;margin-left:1.5rem!important}
+html[dir="rtl"] .ms-xxl-4{margin-left:0!important;margin-right:1.5rem!important}
+html[dir="rtl"] .pe-xxl-4{padding-right:0!important;padding-left:1.5rem!important}
+html[dir="rtl"] .ps-xxl-4{padding-left:0!important;padding-right:1.5rem!important}
+html[dir="rtl"] .me-xxl-5{margin-right:0!important;margin-left:3rem!important}
+html[dir="rtl"] .ms-xxl-5{margin-left:0!important;margin-right:3rem!important}
+html[dir="rtl"] .pe-xxl-5{padding-right:0!important;padding-left:3rem!important}
+html[dir="rtl"] .ps-xxl-5{padding-left:0!important;padding-right:3rem!important}
+html[dir="rtl"] .me-xxl-auto{margin-right:0!important;margin-left:auto!important}
+html[dir="rtl"] .ms-xxl-auto{margin-left:0!important;margin-right:auto!important}
+html[dir="rtl"] .text-xxl-start{text-align:right!important}
+html[dir="rtl"] .float-xxl-start{float:right!important}
+html[dir="rtl"] .text-xxl-end{text-align:left!important}
+html[dir="rtl"] .float-xxl-end{float:left!important}
+}
+
+/* ---- Theme details that depend on reading direction ---- */
+html[dir="rtl"] .footer .btn.btn-link{text-align:right}
+html[dir="rtl"] .footer .btn.btn-link::before{content:"\f104";margin-right:0;margin-left:10px}
+html[dir="rtl"] .footer-about-credentials{padding-left:0;padding-right:1rem;border-left:0;border-right:2px solid var(--brand-gold)}
+
+/* Gold accent bars sit on the reading-start side. */
+html[dir="rtl"] body .cred-custom-card{border-left:1px solid var(--line)!important;border-right:4px solid var(--pg)!important}
+html[dir="rtl"] body .cred-custom-card::before{right:auto;left:1.2rem}
+html[dir="rtl"] body .cred-custom-card:hover{transform:translateY(-7px) translateX(-3px);box-shadow:12px 14px 0 var(--pg-pale)!important}
+html[dir="rtl"] body .membership-card::before{right:auto;left:.7rem}
+html[dir="rtl"] body .chamber-card{border-left:0!important;border-right:4px solid var(--pg)!important}
+html[dir="rtl"] body .treatments-premium-section .ser-num{border-left:1px solid var(--treatment-border);border-right:2px solid var(--pg)}
+html[dir="rtl"] body.about-editorial .about-story .col-lg-6:last-child > p.text-primary{padding:0 1.25rem 1.15rem 0;border-left:0;border-right:2px solid var(--about-gold)}
+html[dir="rtl"] .appt-tile{border-left:0;border-right:4px solid var(--bs-primary);border-radius:1rem 0 0 1rem}
+html[dir="rtl"] .appt-chamber-item{border-left:0;padding-left:0;border-right:2px solid rgba(191,148,86,.5);padding-right:1.1rem}
+html[dir="rtl"] .video-L16 p{border-left:0;border-right:3px solid #BF9456}
+
+/* Section titles are centred under their small label in both languages. */
+.qualifications-section .education-heading .mb-3{text-align:center;margin-left:auto!important;margin-right:auto!important}
+
+/* Forward arrows point the way Arabic reads. */
+html[dir="rtl"] .fa-arrow-right:not(.treatments-premium-section .ser16 i){display:inline-block;transform:scaleX(-1)}
+
+/* Phone numbers, e-mails and handles keep their left-to-right order. */
+html[dir="rtl"] a[href^="tel:"],html[dir="rtl"] a[href^="mailto:"],html[dir="rtl"] input[type="tel"]{unicode-bidi:isolate}
+html[dir="rtl"] input[type="tel"]{direction:ltr;text-align:right}
+
+/* Arabic text never needs the Latin letter-spacing used for small caps labels. */
+html[lang="ar"] body *{letter-spacing:0!important}
+
+/* Video gallery: arrows and progress follow the reading direction. */
+html[dir="rtl"] .reels-arrow svg{transform:scaleX(-1)}
+html[dir="rtl"] [data-reels-progress]{transform-origin:right center}
+
+/* Footer links keep their real spelling (e.g. "IPS e.max", "X-ray"). */
+.footer .btn.btn-link{text-transform:none}
+
+/* About page section headers: label and title align to the reading start. */
+html[dir="rtl"] body.about-editorial .about-education .text-center,
+html[dir="rtl"] body.about-editorial .about-experience .text-center,
+html[dir="rtl"] body.about-editorial .about-expertise .text-center,
+html[dir="rtl"] body.about-editorial .about-journey .text-center{text-align:right!important}
+
+/* Tick and info icons keep a small gap from the Arabic text beside them. */
+html[dir="rtl"] .credential-pill i{margin-right:0!important;margin-left:.5rem!important}
+html[dir="rtl"] body.about-editorial .credential-pill{margin:0 0 .65rem 1rem}
+
+/* About page step list: the line and dots sit on the reading-start side. */
+html[dir="rtl"] .timeline-item{padding-left:0;padding-right:2.5rem;border-left:0;border-right:2px dashed rgba(191,148,86,.3)}
+html[dir="rtl"] .timeline-item:last-child{border-right-color:transparent}
+html[dir="rtl"] .timeline-item::before{left:auto;right:-8px}
+html[dir="rtl"] body.about-editorial .timeline-item{padding:0 2.25rem 2.1rem 0;border-left:0;border-right:1px solid var(--about-line)}
+html[dir="rtl"] body.about-editorial .timeline-item:last-child{border-right-color:transparent}
+html[dir="rtl"] body.about-editorial .timeline-item::before{left:auto;right:-5px}
+
+/* About page info card: icon gap on the Arabic side. */
+html[dir="rtl"] .profile-detail i{margin-right:0;margin-left:1rem}
+
+/* Breadcrumb separator sits between the items in Arabic. */
+html[dir="rtl"] .breadcrumb-item+.breadcrumb-item{padding-left:0;padding-right:.5rem}
+html[dir="rtl"] .breadcrumb-item+.breadcrumb-item::before{float:right;padding-right:0;padding-left:.5rem}
+
+/* Booking page "Why book ahead" cards. */
+html[dir="rtl"] .onl14{border-left:0!important;border-right:4px solid #BF9456!important}
+
+/* Footer social buttons keep the same spacing as the English layout. */
+html[dir="rtl"] .footer .btn-sm-square.me-3{margin-right:10px!important}

@@ -35,7 +35,9 @@
         if (!node) return;
         if (typeof texts[key] !== "string") return;
         var raw = node.nodeValue || "";
-        node.nodeValue = raw.match(/^\s*/)[0] + texts[key] + raw.match(/\s*$/)[0];
+        var v = texts[key];
+        if (document.documentElement.dir === "rtl") v = v.replace(/\u2066?(@[A-Za-z0-9._]+|\+?\d[\d ]{6,}\d)\u2069?/g, "\u2066$1\u2069");
+        node.nodeValue = raw.match(/^\s*/)[0] + v + raw.match(/\s*$/)[0];
       });
     });
     document.querySelectorAll("[data-ck-attr]").forEach(function (el) {
@@ -154,7 +156,7 @@
     applyContact();
     var data = read();
     if (!data) return;
-    var lang = window.__SITE_LANG__ || "en";
+    var lang = window.__SITE_LANG__ || "ar";
     applyTexts((data.langs && data.langs[lang]) || null);
     applyImages(data.images || null);
   }

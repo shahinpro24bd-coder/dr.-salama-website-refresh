@@ -7,10 +7,10 @@
   /* Read the language at init time — this bundle may load before the
      bootstrap script that publishes window.__SITE_LANG__. */
   function currentLang() {
-    return window.__SITE_LANG__ || "en";
+    return window.__SITE_LANG__ || "ar";
   }
   function currentLangs() {
-    return (window.__SITE_LANGS__ || ["en", "ar"]).slice();
+    return (window.__SITE_LANGS__ || ["ar", "en"]).slice();
   }
 
   var FLAGS = {
@@ -76,7 +76,7 @@
 
     var LANGS = currentLangs();
     var current = currentLang();
-    if (LANGS.indexOf(current) < 0) current = LANGS[0] || "en";
+    if (LANGS.indexOf(current) < 0) current = "ar";
 
     var toggle = document.createElement("button");
     toggle.type = "button";

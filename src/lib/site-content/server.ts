@@ -2,11 +2,11 @@ import fallbackSnapshotJson from "./fallback.generated.json?raw";
 import { SITE_LOGO_URL } from "./branding";
 
 /** Every language the site is published in, in switcher order. */
-export const SITE_LANGS = ["en", "ar"] as const;
+export const SITE_LANGS = ["ar", "en"] as const;
 export type SiteLang = (typeof SITE_LANGS)[number];
 
 /** Language served when the visitor has not chosen one. */
-export const DEFAULT_LANG: SiteLang = "en";
+export const DEFAULT_LANG: SiteLang = "ar";
 
 export function isSiteLang(value: string): value is SiteLang {
   return (SITE_LANGS as readonly string[]).includes(value);
