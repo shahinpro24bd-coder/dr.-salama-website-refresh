@@ -248,3 +248,10 @@ html[dir="rtl"] body.about-editorial .timeline-item::before{left:auto;right:-5px
 
 /* About page info card: icon gap on the Arabic side. */
 html[dir="rtl"] .profile-detail i{margin-right:0;margin-left:1rem}
+
+/* Breadcrumb separator sits between the items in Arabic. */
+html[dir="rtl"] .breadcrumb-item+.breadcrumb-item{padding-left:0;padding-right:.5rem}
+html[dir="rtl"] .breadcrumb-item+.breadcrumb-item::before{float:right;padding-right:0;padding-left:.5rem}
+
+/* Booking page "Why book ahead" cards. */
+html[dir="rtl"] .onl14{border-left:0!important;border-right:4px solid #BF9456!important}
