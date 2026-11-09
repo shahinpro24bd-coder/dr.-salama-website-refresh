@@ -1461,7 +1461,7 @@
 
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(url).then(() => {
-                    showNotification(window.__SITE_LANG__ === 'ru' ? 'Ссылка на профиль скопирована!' : "Profile link copied successfully!");
+                    showNotification(window.__SITE_LANG__ === 'ar' ? 'تم نسخ رابط الصفحة!' : "Profile link copied successfully!");
                 }).catch(() => {
                     fallbackCopy(url);
                 });
@@ -1479,9 +1479,9 @@
             tempInput.select();
             try {
                 document.execCommand("copy");
-                showNotification(window.__SITE_LANG__ === 'ru' ? 'Ссылка на профиль скопирована!' : "Profile link copied successfully!");
+                showNotification(window.__SITE_LANG__ === 'ar' ? 'تم نسخ رابط الصفحة!' : "Profile link copied successfully!");
             } catch (e) {
-                showNotification(window.__SITE_LANG__ === 'ru' ? 'Не удалось скопировать ссылку. Пожалуйста, скопируйте вручную.' : "Could not copy link. Please copy manually.");
+                showNotification(window.__SITE_LANG__ === 'ar' ? 'تعذر نسخ الرابط، يرجى نسخه يدوياً.' : "Could not copy link. Please copy manually.");
             }
             document.body.removeChild(tempInput);
         }

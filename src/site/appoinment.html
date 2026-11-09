@@ -1225,19 +1225,18 @@
                 overlay.classList.remove('active');
                 document.body.style.overflow = 'auto';
 
-                var mailTo = '972532815272@sms.invalid';
-                var mailSubject = encodeURIComponent(subject);
+                                var mailSubject = encodeURIComponent(subject);
                 var mailBody = encodeURIComponent(
-                    'Dear Dr. Nihaia,\n\n' +
+                    'Dear Dr. Husien Salama,\n\n' +
                     message + '\n\n' +
                     '---\n' +
                     'Patient Name: ' + name + '\n' +
                     'Email: ' + email + '\n' +
                     'Phone: ' + (phone || 'N/A') + '\n\n' +
-                    'Sent from Biadse Dental Clinic Website Contact Form'
+                    'Sent from the Dr. Husien Salama website'
                 );
 
-                window.location.href = 'https://api.whatsapp.com/send?phone=972532815272&text=' + encodeURIComponent(mailSubject + '\n' + mailBody);
+                window.location.href = 'https://api.whatsapp.com/send?phone=9647744444992&text=' + encodeURIComponent(mailSubject + '\n' + mailBody);
 
                 // Reset form
                 document.getElementById('contactForm').reset();
