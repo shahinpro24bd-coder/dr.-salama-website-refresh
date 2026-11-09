@@ -222,7 +222,7 @@ export function renderPage(html: string, options: RenderOptions): string {
       const leading = raw.match(/^\s*/)![0];
       const trailing = raw.match(/\s*$/)![0];
       const { key, value } = resolveText(raw);
-      node.value = leading + (rtl ? isolateLtrRuns(value) : value) + trailing;
+      node.value = leading + (rtl && !editMode ? isolateLtrRuns(value) : value) + trailing;
       const list = keysByParent.get(parent) || [];
       list.push(key);
       keysByParent.set(parent, list);
