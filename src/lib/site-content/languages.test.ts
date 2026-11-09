@@ -5,8 +5,8 @@ import { readFileSync } from "node:fs";
 import { JSDOM } from "jsdom";
 
 describe("public languages", () => {
-  it("offers exactly English and Arabic", () => {
-    expect(SITE_LANGS).toEqual(["en", "ar"]);
+  it("offers exactly Arabic and English, Arabic first", () => {
+    expect(SITE_LANGS).toEqual(["ar", "en"]);
     expect(isSiteLang("ar")).toBe(true);
     expect(isSiteLang("ru")).toBe(false);
     expect(isSiteLang("he")).toBe(false);
@@ -30,22 +30,24 @@ describe("public languages", () => {
 });
 
 describe("default language", () => {
-  it("serves English when no language is chosen", async () => {
+  it("serves Arabic when no language is chosen", async () => {
     const { renderSitePage } = await import("./render.server");
     const res = await renderSitePage(new Request("http://x/index.html"), "index");
-    expect(await res.text()).toContain('window.__SITE_LANG__="en"');
+    const html = await res.text();
+    expect(html).toContain('window.__SITE_LANG__="ar"');
+    expect(html).toContain('lang="ar" dir="rtl"');
   });
 
   it("keeps cookie-selected pages out of shared caches", async () => {
     const { renderSitePage } = await import("./render.server");
     const res = await renderSitePage(new Request("http://x/index.html", {
-      headers: { cookie: "site_lang=ar" },
+      headers: { cookie: "site_lang=en" },
     }), "index");
-    expect(await res.text()).toContain('window.__SITE_LANG__="ar"');
+    expect(await res.text()).toContain('window.__SITE_LANG__="en"');
     expect(res.headers.get("Cache-Control")).toBe("private, no-cache");
     expect(res.headers.get("Vary")).toBe("Cookie");
     const fresh = await renderSitePage(new Request("http://x/index.html"), "index");
-    expect(await fresh.text()).toContain('window.__SITE_LANG__="en"');
+    expect(await fresh.text()).toContain('window.__SITE_LANG__="ar"');
     expect(fresh.headers.get("Cache-Control")).toBe("private, no-cache");
   });
 

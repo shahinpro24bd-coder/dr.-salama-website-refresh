@@ -10,7 +10,7 @@
     return window.__SITE_LANG__ || "ar";
   }
   function currentLangs() {
-    return (window.__SITE_LANGS__ || ["en", "ar"]).slice();
+    return (window.__SITE_LANGS__ || ["ar", "en"]).slice();
   }
 
   var FLAGS = {

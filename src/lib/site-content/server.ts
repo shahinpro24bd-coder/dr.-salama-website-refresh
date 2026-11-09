@@ -2,7 +2,7 @@ import fallbackSnapshotJson from "./fallback.generated.json?raw";
 import { SITE_LOGO_URL } from "./branding";
 
 /** Every language the site is published in, in switcher order. */
-export const SITE_LANGS = ["en", "ar"] as const;
+export const SITE_LANGS = ["ar", "en"] as const;
 export type SiteLang = (typeof SITE_LANGS)[number];
 
 /** Language served when the visitor has not chosen one. */
