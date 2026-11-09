@@ -255,3 +255,6 @@ html[dir="rtl"] .breadcrumb-item+.breadcrumb-item::before{float:right;padding-ri
 
 /* Booking page "Why book ahead" cards. */
 html[dir="rtl"] .onl14{border-left:0!important;border-right:4px solid #BF9456!important}
+
+/* Footer social buttons keep the same spacing as the English layout. */
+html[dir="rtl"] .footer .btn-sm-square.me-3{margin-right:10px!important}
