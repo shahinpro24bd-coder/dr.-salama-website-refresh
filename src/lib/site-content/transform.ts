@@ -183,7 +183,7 @@ export function collectSiteContent(html: string): SiteContent {
  * the editor can find it, and images get lazy loading.
  */
 export function renderPage(html: string, options: RenderOptions): string {
-  const { texts, images, editMode = false, lang = "en", bodyScripts = "" } = options;
+  const { texts, images, editMode = false, lang = "ar", bodyScripts = "" } = options;
   const doc = parse(html) as unknown as AnyNode;
   for (const child of doc.childNodes || []) {
     if (child.tagName === "html") {

@@ -154,7 +154,7 @@
     applyContact();
     var data = read();
     if (!data) return;
-    var lang = window.__SITE_LANG__ || "en";
+    var lang = window.__SITE_LANG__ || "ar";
     applyTexts((data.langs && data.langs[lang]) || null);
     applyImages(data.images || null);
   }

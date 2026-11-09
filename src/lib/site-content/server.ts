@@ -6,7 +6,7 @@ export const SITE_LANGS = ["en", "ar"] as const;
 export type SiteLang = (typeof SITE_LANGS)[number];
 
 /** Language served when the visitor has not chosen one. */
-export const DEFAULT_LANG: SiteLang = "en";
+export const DEFAULT_LANG: SiteLang = "ar";
 
 export function isSiteLang(value: string): value is SiteLang {
   return (SITE_LANGS as readonly string[]).includes(value);

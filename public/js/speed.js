@@ -54,7 +54,7 @@
   var cache = Object.create(null);
 
   function withLang(url) {
-    var lang = window.__SITE_LANG__ || "en";
+    var lang = window.__SITE_LANG__ || "ar";
     url.searchParams.set("lang", lang);
     return url;
   }
