@@ -209,7 +209,7 @@ html[dir="rtl"] .appt-chamber-item{border-left:0;padding-left:0;border-right:2px
 html[dir="rtl"] .video-L16 p{border-left:0;border-right:3px solid #BF9456}
 
 /* Section titles are centred under their small label in both languages. */
-.education-heading .mb-3{text-align:center;margin-left:auto!important;margin-right:auto!important}
+.qualifications-section .education-heading .mb-3{text-align:center;margin-left:auto!important;margin-right:auto!important}
 
 /* Forward arrows point the way Arabic reads. */
 html[dir="rtl"] .fa-arrow-right:not(.treatments-premium-section .ser16 i){display:inline-block;transform:scaleX(-1)}
@@ -227,3 +227,12 @@ html[dir="rtl"] [data-reels-progress]{transform-origin:right center}
 
 /* Footer links keep their real spelling (e.g. "IPS e.max", "X-ray"). */
 .footer .btn.btn-link{text-transform:none}
+
+/* About page section headers: label and title align to the reading start. */
+html[dir="rtl"] body.about-editorial .about-education .text-center,
+html[dir="rtl"] body.about-editorial .about-experience .text-center,
+html[dir="rtl"] body.about-editorial .about-expertise .text-center,
+html[dir="rtl"] body.about-editorial .about-journey .text-center{text-align:right!important}
+
+/* Tick and info icons keep a small gap from the Arabic text beside them. */
+html[dir="rtl"] .credential-pill i{margin-right:0;margin-left:.45rem}
